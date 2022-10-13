@@ -37,7 +37,7 @@ describe('Buy', function () {
         CartPage.checkout()
         CheckoutStepOnePage.inputCheckout('Jhonny', 'Morais', '1{backspace}')
         CheckoutStepOnePage.continue()
-        checkoutStepOnePage.errorMenssage('Error: Postal Code is required')
+        CheckoutStepOnePage.errorMenssage('Error: Postal Code is required')
     })
 
     it('Alternate Flow | Insert incorrect Last Name', function () {
@@ -48,7 +48,7 @@ describe('Buy', function () {
         CartPage.checkout()
         CheckoutStepOnePage.inputCheckout('Jhonny', '1{backspace}', '60711500')
         CheckoutStepOnePage.continue()
-        checkoutStepOnePage.errorMenssage('Error: Last Name is required')
+        CheckoutStepOnePage.errorMenssage('Error: Last Name is required')
     })
 
     it('Alternate Flow | Insert incorrect First Name', function () {
@@ -59,7 +59,7 @@ describe('Buy', function () {
         CartPage.checkout()
         CheckoutStepOnePage.inputCheckout('1{backspace}', 'Morais', '60711500')
         CheckoutStepOnePage.continue()
-        checkoutStepOnePage.errorMenssage('Error: First Name is required')
+        CheckoutStepOnePage.errorMenssage('Error: First Name is required')
     })
 
 
