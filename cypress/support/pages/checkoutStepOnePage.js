@@ -11,8 +11,11 @@ class CheckoutStepOnePage {
     continue() {
         cy.get('[data-test="continue"]')
             .click()
-        cy.url()
-            .should('eq', Cypress.config().baseUrl + '/checkout-step-two.html')
+    }
+
+    errorMenssage(menssage) {
+        cy.get('[data-test="error"]')
+        .should('have.text', menssage)
     }
 
 }

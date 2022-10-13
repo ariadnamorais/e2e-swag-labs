@@ -7,7 +7,7 @@ describe('Login', function () {
         cy.visit('')
     })
 
-    it('Login Successfully', function () {
+    it('Basic Flow | Login Successfully', function () {
 
         LoginPage.login('standard_user', 'secret_sauce')
         cy.url()
@@ -15,7 +15,7 @@ describe('Login', function () {
 
     })
 
-    it('Login Unsuccessful', function () {
+    it('Alternate Flow | Login Unsuccessful', function () {
         LoginPage.login('user_incorrect', 'secret_incorrect')
         cy.get('.error-button')
             .should('be.visible')
