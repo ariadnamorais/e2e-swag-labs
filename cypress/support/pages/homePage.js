@@ -20,7 +20,6 @@ class HomePage {
             .click()
     }
 
-
 }
 
 export default new HomePage()

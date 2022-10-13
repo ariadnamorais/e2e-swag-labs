@@ -37,5 +37,4 @@ describe('Cart', function () {
         CartPage.continueShopping()
     })
 
-
 })

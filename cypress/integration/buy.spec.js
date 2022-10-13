@@ -5,7 +5,6 @@ import CartPage from '../support/pages/cartPage'
 import CheckoutStepOnePage from '../support/pages/checkoutStepOnePage'
 import CheckoutStepTwoPage from '../support/pages/checkoutStepTwoPage'
 import CheckoutCompletePage from '../support/pages/checkoutCompletePage'
-import checkoutStepOnePage from '../support/pages/checkoutStepOnePage'
 
 describe('Buy', function () {
 

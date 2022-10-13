@@ -7,7 +7,6 @@ class LoginPage {
         cy.get('#login-button')
             .click()
     }
-
 }
 
 export default new LoginPage()

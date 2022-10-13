@@ -15,9 +15,8 @@ class CheckoutStepOnePage {
 
     errorMenssage(menssage) {
         cy.get('[data-test="error"]')
-        .should('have.text', menssage)
+            .should('have.text', menssage)
     }
-
 }
 
 export default new CheckoutStepOnePage()

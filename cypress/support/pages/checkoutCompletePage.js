@@ -6,7 +6,6 @@ class CheckoutCompletePage {
         cy.url()
             .should('eq', Cypress.config().baseUrl + '/inventory.html')
     }
-
 }
 
 export default new CheckoutCompletePage()
